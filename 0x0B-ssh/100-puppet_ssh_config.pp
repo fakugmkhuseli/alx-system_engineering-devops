@@ -8,7 +8,7 @@ file_line { 'Turn off passwd auth':
   replace => true,
 }
 
-file_line { 'Delete identify file':
+file_line { 'Declare identify file':
   ensure => present,
   path   => '/etc/ssh/ssh_config',
   line   => '     IdentifyFile ~/.ssh/school',
