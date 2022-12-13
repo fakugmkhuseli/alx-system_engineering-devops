@@ -11,6 +11,6 @@ file_line { 'Turn off passwd auth':
 file_line { 'Delete identify file':
   ensure => present,
   path   => '/etc/ssh/ssh_config',
-  line   => '    IdentifyFile ~/.ssh/school',
+  line   => '     IdentifyFile ~/.ssh/school',
   replace => true,
 }
