@@ -1,15 +1,13 @@
-# Set up your client SSH configuration file
+# Connect to a server without a password.
 
-file_line { 'Turn off passwd auth':
+file_line {
+  'passAuth':
   ensure => present,
   path   => '/etc/ssh/ssh_config',
-  line   => '    PasswordAuthentication no',
-  replace => true,
-}
-
-file_line { 'Declare identify file':
+  line   => '   PasswordAuthentication no'
+  ;
+  'keyLocation':
   ensure => present,
   path   => '/etc/ssh/ssh_config',
-  line   => '     IdentifyFile ~/.ssh/school',
-  replace => true,
+  line   => '   IdentifyFile ~/.ssh/school'
 }
