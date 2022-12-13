@@ -1,5 +1,4 @@
 # Set up your client SSH configuration file
-include stdlib
 
 file_line { 'Turn off passwd auth':
   ensure => present,
