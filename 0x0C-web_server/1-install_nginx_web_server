@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-# Installs nginx on the server.
-#+ Nginx listens on port 80
-#++ Return a page containing "Hello World!" when queried
+# Installs nginx on the server and configure it to listens on port 80
+#+ Return a page containing "Hello World!" when queried
 
 sudo apt-get update
 sudo apt-get -y install nginx
